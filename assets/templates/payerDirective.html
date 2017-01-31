@@ -1,0 +1,15 @@
+<div class="">
+  <h2>Payer Name: {{payer.name}}</h2>
+  <button type="button" name="button" class="btn btn-sm btn-warning">Edit Payer</button>
+  <button type="button" name="button" class="btn btn-sm btn-danger">Remove Payer</button>
+  <h3>Plans: </h3>
+  <div class="" ng-repeat="plan in payer.plans">
+    <h4>{{plan.name}}</h4>
+    <ul>
+      <li>{{plan.metallicLevel}}</li>
+      <li>{{plan.state}}</li>
+      <li>{{plan.type}}</li>
+      <li>{{plan.status}}</li>
+    </ul>
+  </div>
+</div>

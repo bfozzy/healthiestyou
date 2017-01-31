@@ -1,0 +1,19 @@
+<payer-directive ng-repeat="payer in payers" payer="payer"></payer-directive>
+<button type="button" name="button" class="btn btn-lg btn-success">Add New Payer</button>
+<form>
+  <div class="form-inline">
+    <label for="exampleInputEmail1">Payer Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Example Name" ng-model="newPayerName">
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" ng-model="dental"> Dental Only
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" ng-model="medicaid"> Medicaid
+    </label>
+  </div>
+  <button type="submit" ng-click="addPayer(dental, medicaid, newPayerName)"class="btn btn-success">Save</button>
+</form>
